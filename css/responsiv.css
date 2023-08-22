@@ -172,16 +172,39 @@
     padding: 30px;
     margin: 50px auto;
 }
-.card img{
-    width: 125px;
-    height: 100px;
+
+.card-img1{
+    background-image: url('/img/logo/stucture2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+}
+.card-img2{
+    background-image: url('/img/logo/texPlanning2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+}
+.card-img3{
+    background-image: url('/img/logo/cfo2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+}
+.card-img4{
+    background-image: url('/img/logo/services2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
 }
 .card h1{
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
+    margin-top: 15px;
     line-height: 36px; 
 }
 .card p{
+    margin-top: 10px;
     color:  #F2F4F4;
     font-size: 14px;
     line-height: 20px; 
@@ -233,5 +256,25 @@
      width: 90%;
      height: 349px;
  }
-
+/* ---------------------------------banner end----------------------------------- */
+.tax-liability{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.tax-line{
+    width: 504px;
+}
+.tax-title{
+    width: 100%;
+    padding: 0px 50px;
+}
+.card{
+    width: 380px;
+    height: 538px;
+    padding: 60px;
+}
+.card h1{
+    font-size: 28px;
+}
 }

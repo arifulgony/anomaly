@@ -9,7 +9,6 @@
   }
   body {
     margin: 0 auto;
-    width:1902px;
   }
   a:focus,
   .btn:focus,
@@ -28,7 +27,6 @@ font-family: 'Manrope', sans-serif; */
     height: 822px;
     background: #234147;
 }
-
 .headers {
     display: flex;
     align-items: center;
@@ -208,8 +206,26 @@ font-family: 'Manrope', sans-serif; */
     height: 538px;
     padding: 60px;
 }
-.card img{
+.card-img1{
+    background-image: url('/img/logo/stucture.png');
     width: 195px;
+    height: 175px;
+}
+.card-img2{
+    background-image: url('/img/logo/texPlanning.png');
+    background-repeat: no-repeat;
+    width: 195px;
+    height: 175px;
+}
+.card-img3{
+    background-image: url('/img/logo/cfo.png');
+    background-repeat: no-repeat;
+    width: 195px;
+    height: 175px;
+}
+.card-img4{
+    background-image: url('/img/logo/services.png');
+    width: 215px;
     height: 175px;
 }
 .card h1{
