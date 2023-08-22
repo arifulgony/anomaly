@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Inter:wght@200&family=Manrope&display=swap');
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0 auto;
+    width:1902px;
+  }
+  a:focus,
+  .btn:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    text-decoration: none;
+    text-shadow: none;
+    outline: none;
+  }
+/* 
+ font-family: 'Azeret Mono', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif; */
+.header-main{
+    height: 822px;
+    background: #234147;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 1080px;
+    padding: 25px 0px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 166px;
+    height: 49px;
+    margin-right: 80px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 0px;
+}
+
+.nav a {
+    font-weight: 600;
+    font-size: 16px;
+    color:  #95A19A;
+    font-family: 'Manrope';
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.btn {
+    width: 222px;
+    height: 60px;
+    font-family:'Azeret Mono';
+    border: 1px solid #95A19A;
+    padding: 20px 45px;
+    border-radius: 5px;
+    color: #B8CA28;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.toggle {
+    display: none;
+}
+.nav-button{
+    display: none;
+}
+
+
+.banner{
+    margin: 0 auto;
+    width: 1080px;
+    display: flex;
+}
+.banner-details{
+    width: 572px;
+    margin-top: 120px;
+}
+.banner-details h1{
+    color:  #F2F4F4;
+    font-family: 'Manrope';
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 71px; 
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+.banner-details p{
+    color:  #CECCC4;
+    font-family: 'Azeret Mono';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px; 
+    margin-top: 24px;
+    letter-spacing: 0.8px;
+}
+.banner-details button{
+    width: 515px;
+    height: 80px;
+    margin-top: 24px;
+    padding: 16px 28px;
+    border: none;
+    background-color: #B8CA28;;
+}
+.banner-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-btn samp{
+    color: #234147;
+    font-family: 'Azeret Mono';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+} 
+.banner-btn img{
+   margin-left: 20px;
+}
+
+.banner-img{
+    background-image: url('/img/logo/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 485px;
+}
+.banner-img img{
+    width: 485px;
+    height: 703px; 
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+/* -----------------------banner end ----------------------------------------- */
+.accounting{
+   width: 100%;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#95A19A;;
+}
+.tax-liability{
+    width: 963px;
+    margin: 0 auto;
+    height: 100%;
+}
+.tax-heading{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.tax-heading p{
+    color: #234147;
+    font-family: 'Azeret Mono';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+.tax-line{
+    width: 814px;
+    height: 1px;
+    background: #234147;
+}
+.tax-title h1{
+    width: 700px;
+    color: #234147;
+    font-family: 'Manrope';
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 68px; 
+}
+
+.card-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 480px;
+    height: 538px;
+    padding: 60px;
+}
+.card img{
+    width: 195px;
+    height: 175px;
+}
+.card h1{
+    color: #234147;
+    font-family: 'Manrope';
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 29px;
+    line-height: 49px; 
+}
+.card p{
+    color: #234147;
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    margin-top: 33px;
+    font-weight: 300;
+    line-height: 20px; 
+}
+.liability-btn{
+    width: 100%;
+    height: 80px;
+    border: none;
+    background: #B8CA28;
+}

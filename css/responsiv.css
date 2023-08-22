@@ -1,0 +1,237 @@
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    .headers{
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .nav-button{
+        display: block;
+        margin-top: 150px;
+        margin-left: 69px;
+    }
+    .nav-button {
+        text-align: center;
+        margin: 100px auto;
+    }
+    .nav-button a{
+        width: 222px;
+        height: 60px;
+        font-family:'Azeret Mono';
+        border: 1px solid #95A19A;
+        padding: 20px 45px;
+        border-radius: 5px;
+        color: #B8CA28;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .buttons{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+    }
+    .nav.active {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding-top: 130px;
+        background: #162528;
+        height: 100vh;
+        z-index: 1;
+    }
+    .nav li {
+        padding: 20px;
+        text-align: center;
+    }
+    .toggle {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2; 
+    }
+    .toggle span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #fff; 
+        margin-bottom: 5px; 
+        transition: all 0.3s ease; 
+    }
+    .toggle span:nth-child(1) {
+        transform-origin: top left; 
+    }
+
+    .toggle span:nth-child(3) {
+        transform-origin: bottom left; 
+    }
+
+    .toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); 
+    }
+
+    .toggle.active span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); 
+    }
+}
+ /* ------------------------------------header end ------------------------------------------ */
+ /* ------------------------------------mobail devices ------------------------------------------ */
+@media (min-width: 280px) and (max-width: 576px) {
+.header-main{
+        height: 100%;    
+  }   
+ .banner{
+     margin: 0 auto;
+     width: 90%;
+     display: block;
+ }
+ .banner-details{
+     width: 90%;
+     margin-top:20px;
+ }
+ .banner-details h1{
+     font-size: 30px;
+     line-height: 40px;
+ }
+ .banner-details p{
+     font-size: 14px;
+     line-height: 20px;
+ }
+ .banner-details button{
+     width: 90%;
+     height: 50px;
+     margin-top: 24px;
+     padding: 6px 5px;
+ }
+ .none{
+     display: none;
+ }
+ .banner-btn samp{
+     font-size: 10px;
+     letter-spacing: -0.32px;
+ } 
+ .banner-btn img{
+     width: 26px;
+    margin-left: 5px;
+ }
+ .banner-img{
+     margin-top: 50px;
+     width: 90%;
+ }
+ .banner-img img{
+     width: 90%;
+     height: 339px;
+ }
+ /* --------------------------------------banner end ------------------------- */
+ .accounting{
+    height: 153px;
+ }
+ .accounting img{
+    width: 200px;
+ }
+ .tax-liability{
+    width: 320px;
+    margin: 0 auto;
+    height: 100%;
+}
+.tax-title h1{
+    width: 300px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 0px;
+    letter-spacing: -0.36px;
+}
+ .tax-heading{
+    gap: 10px;
+ }
+.tax-line{
+    width: 190px;
+}
+ 
+.card-row{
+   display: block;
+}
+.card{
+    background: #0C57AC;
+    width: 300px;
+    height: 413px;
+    padding: 30px;
+    margin: 50px auto;
+}
+.card img{
+    width: 125px;
+    height: 100px;
+}
+.card h1{
+    color: #fff;
+    font-size: 28px;
+    line-height: 36px; 
+}
+.card p{
+    color:  #F2F4F4;
+    font-size: 14px;
+    line-height: 20px; 
+}
+
+
+}
+
+/* ---------------------------------------------- tableat device --------------------------------- */
+@media (min-width: 578px) and (max-width: 768px) {
+    .header-main{
+        height: 90%;    
+  }   
+ .banner{
+     margin: 0 auto;
+     width: 100%;
+     display: block;
+ }
+ .banner-details{
+     width: 90%;
+     margin: 50px auto;
+ }
+ .banner-details h1{
+     font-size: 30px;
+     line-height: 40px;
+ }
+ .banner-details p{
+     font-size: 16px;
+     line-height: 20px;
+ }
+ .banner-details button{
+    margin: 24px auto;
+     width: 60%;
+     height: 50px;
+     padding: 6px 5px;
+ }
+
+ .banner-btn samp{
+     font-size: 16px;
+ } 
+ .banner-btn img{
+    margin-left: 10px;
+ }
+ .banner-img{
+    margin: 0 auto;
+     width: 485px;
+ }
+ .banner-img img{
+     width: 90%;
+     height: 349px;
+ }
+
+}
