@@ -211,8 +211,64 @@
 }
 
 
-}
+/* --------------------tax-liability end  --------------------------------------- */
+.remote-finance-main{
 
+    padding: 100px 0px;
+    margin-top: 150px;
+}
+.remote-finance-main .remote-img{
+    width: 230px;
+    height: 181px;
+    margin-top: -180px;
+}
+.remote-finance{
+    width: 100%;
+}
+.remote-text-line{
+    width: 100%;
+    gap: 5px;
+}
+.remote-text-line p{
+    font-size: 12px;
+}
+.remote-line{
+    width: 160px;
+}
+.remote-finance-title{
+    width: 100%;
+    display: block;
+}
+.remote-finance-title h1{
+    width: 90%;
+    height: 230px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 48px; 
+    letter-spacing: -0.36px;
+}
+.remote-finance-title img{
+   display: none;
+
+}
+.remote-item-contain{
+    display: block;
+    margin-bottom: 50;
+}
+.item li{
+    font-size: 16px;
+}
+.item-right-text{
+    padding-left: 10px;
+}
+.items li{
+    padding-left: 5px;
+    font-size: 14px;
+}
+/* --------------------remote-finance end --------------------------------------- */
+
+
+}
 /* ---------------------------------------------- tableat device --------------------------------- */
 @media (min-width: 578px) and (max-width: 768px) {
     .header-main{
@@ -277,4 +333,40 @@
 .card h1{
     font-size: 28px;
 }
+/* --------------------------tax-liability end------------------ */
+.remote-finance-main{
+    padding: 0 20px;
 }
+.remote-finance{
+    width: 100%;
+}
+.remote-finance-title{
+    width: 100%;
+}
+.remote-finance-main .remote-img{
+    width: 350px;
+    height: 281px;
+    margin-top: -180px;
+}
+
+.remote-finance-title img{
+    display: none;
+ 
+ }
+ .remote-finance-title h1{
+ width: 90%;
+ height: 250px;
+}
+
+.remote-item-contain{
+    gap: 18px;
+    margin-bottom: 80px;
+}
+.item li, .items li{
+    font-size: 12px;
+}
+/* --------------------remote-finance end --------------------------------------- */
+
+
+}
+
