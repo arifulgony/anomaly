@@ -791,6 +791,7 @@ padding: 0 24px;
     }
 
 }
+
 @media (min-width: 1025px) and (max-width: 1440px) {
     .remote-finance-main .remote-img {
         margin-top: -149px;
@@ -798,7 +799,7 @@ padding: 0 24px;
         width: 745px;
     }
     .abouteUs-main{
-        width: 1440px;
+        width: 100%;
         overflow: hidden;
         height: 985px;
         background:#234147;
