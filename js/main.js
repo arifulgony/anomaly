@@ -18,12 +18,23 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     showSlide(slideIndex += 1);
 });
 
+
+showSlide(slideIndex);
+document.getElementById('prevBtn2').addEventListener('click', () => {
+    showSlide(slideIndex -= 1);
+});
+
+document.getElementById('nextBtn2').addEventListener('click', () => {
+    showSlide(slideIndex += 1);
+});
+
 const circles = document.querySelectorAll('.circle');
 circles.forEach((circle, index) => {
     circle.addEventListener('click', () => {
         showSlide(slideIndex = index + 1);
     });
 });
+
 
 function showSlide(n) {
     const slides = document.querySelectorAll('.slide');
@@ -36,18 +47,21 @@ function showSlide(n) {
         slideIndex = slides.length;
     }
     
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
+    });
+    
     slides.forEach((slide, index) => {
         slide.style.transform = `translateX(${100 * (index - (slideIndex - 1))}%)`;
     });
-
-    circles.forEach((circle, index) => {
-        if (index === slideIndex - 1) {
-            circle.classList.add('active');
-        } else {
-            circle.classList.remove('active');
-        }
+    circles.forEach((circle) => {
+        circle.classList.remove('active');
     });
+    slides[slideIndex - 1].style.display = 'block';
+    circles[slideIndex - 1].classList.add('active');
 }
+
+
 // single slider end
 
 
@@ -63,7 +77,6 @@ let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
 });
-
 carouselChildrens.slice(0, cardPerView).forEach(card => {
     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
@@ -103,10 +116,18 @@ const infiniteScroll = () => {
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");
     }
-
     clearTimeout(timeoutId);
     if(!wrapper.matches(":hover")) autoPlay();
 }
+
+
+// const middleCardIndex = Math.floor(carouselChildrens.length / 4);
+// const middleCard = carouselChildrens[middleCardIndex];
+// middleCard.style.height = "447px"; 
+// carouselChildrens.slice(cardPerView, cardPerView + 1).forEach((card, index) => {
+//     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+// });
+
 
 const autoPlay = () => {
     if(window.innerWidth < 800 || !isAutoPlay) return; 
@@ -118,5 +139,6 @@ carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
+carousel.addEventListener("scroll", infiniteScrolls);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);

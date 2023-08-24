@@ -67,6 +67,11 @@
     font-size: 16px;
     text-decoration: none;
 }
+.btn:hover{
+    transition:  0.3s;
+    background: #B8CA28;
+    color: #284c54;
+}
 .toggle {
     display: none;
 }
@@ -466,14 +471,21 @@
     text-align: center;
     position: relative;
 }
+
 .slider {
     display: flex;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 .slide {
     flex: 0 0 100%;
-    transition: transform 0.3s ease-in-out;
+    position: relative;
+    animation: myfirst 0.3s 1;
 }
+@keyframes myfirst {
+    0%  { left: 0px; top: 200px;}
+    100% { left: 0px; top: 0px;}
+  }
 .circles {
     display: flex;
     justify-content: center;
@@ -486,7 +498,9 @@
     margin: 0 5px;
     cursor: pointer;
 }
-
+.arro-btn2{
+    display: none;
+ }
 .circle.active {
     background-color: #9d9d9d;
     rotate: 30deg;
@@ -628,18 +642,18 @@
   }
   .arror_btn i{
     color: #fff;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
     font-size: 1.25rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     border-radius: 50%;
     border: 1px solid #fff;
     transform: translateY(-50%);
     transition: transform 0.1s linear;
   }
-  .wrapper i:active{
+  .wrapper i:hover{
     color: red;
     border: 1px solid red;
     transform: translateY(-50%) scale(0.85);
@@ -661,9 +675,10 @@
     text-transform: uppercase;
     border-radius: 3px;
     background: #E93235;
+  }
+  .aboute-btn button:hover{
     box-shadow: 0px 26px 24px 20px rgba(0,0,0,0.1),0px 12px 17px -5px #E93235;
   }
-
   .main_carousel {
       position: relative;
       left: 20%;
@@ -679,6 +694,8 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
   }
+ 
+
   .carousel::-webkit-scrollbar {
     display: none;
   }
@@ -709,14 +726,13 @@
     flex-direction: column;
     padding: 0 69px;
   }
+
   .card-details h4{
       margin-top: 20px;
       color: #3D3D3D;
-      font-family: Inter;
       font-size: 16px;
-      font-style: normal;
       font-weight: 400;
-      line-height: 26px; /* 162.5% */
+      line-height: 26px; 
       letter-spacing: -0.64px;
   }
   .item-box-data{
@@ -734,15 +750,12 @@
       flex-shrink: 0;
       background: #FFF;
       border-radius: 50%;
-     
   }
   .item-box-name h5{
       color: #000;
-      font-family: Inter;
       font-size: 18px;
-      font-style: normal;
       font-weight: 600;
-      line-height: 25px; /* 138.889% */
+      line-height: 25px;
       letter-spacing: -0.18px;
   }
   .carousel .card .img {

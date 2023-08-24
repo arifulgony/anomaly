@@ -99,7 +99,8 @@
  }
  .banner-details{
      width: 90%;
-     margin-top:20px;
+     margin: 20px auto;
+
  }
  .banner-details h1{
      font-size: 30px;
@@ -265,8 +266,8 @@
     font-style: 34px;
 }
 .main_meet{
-    margin-left: 5px !important;
-    width: 300px !important; 
+    width: 320px !important; 
+    margin:  0 auto !important;
 }
 .tax-heading{
     width: 300px;
@@ -329,35 +330,50 @@
     font-size: 36px;
     line-height: 48px; 
 }
-
+.slide{
+    height:480px;
+    margin-left: 0;
+}
 .slider-card{
-    height: 488px;
+    width: 100%;
+    margin-left: 0;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 .arro-btn{
-    width: 100%;
-    justify-content: space-between;
-    height: 300px;
-    position: absolute;
-    margin-top: 430px;
-    z-index: 1;
+   display: none;
 }
-.arro-btn button img{
-    opacity: 0.5;
-
+.arro-btn2{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    z-index: 1;
+    padding: 0 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.arro-btn2 button{
+    background: transparent;
+    border: none;
+}
+.arro-btn2 button img{
+    width: 20px;
+    height: 30px;
 }
 .slider-container {
     position: relative;
-    width: 100%;
+    width:100%;
+    height: 480px;
     margin-top: 50px;
 }
 .cercle-img{
+    margin: 0 auto;
     width: 290px;
     height: 290px;
 }
 .img-bg{
-    margin-left:0px;
+    margin-left:0px !important;
 }
 .img-bg img{
     width: 220px;
@@ -389,7 +405,7 @@
 /* ------------------------------end----------------------------- */
 .abouteUs-main{
     width: 100%;
-    height: 650px;
+    height: 550px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -397,9 +413,9 @@
     position: absolute;
     width: 100%;
     height: 60px;
-    margin-left: 60px;
-    margin-top:  520px;
+    margin-top: 450px;
     display: block;
+    margin-left: 30%;
 }
 .aboute-btn{
     display: none;
@@ -424,13 +440,24 @@ footer{
 .fooder-line {
     display: none;
 }
+.carousel{
+    margin: 0 auto;
+    width: 300px !important;
+    height: 354px !important;  
+}
 .carousel .card{
     width: 300px !important;
-    height: 400px;  
-    padding: 10px;
+    height: 334px !important;  
+    padding: 0 0px;
+
+}
+
+.card-details h4{
+width: 280px;
+padding: 1px;
 }
 .wrapper .carousel {
-    gap: 600px;
+    gap: 300px;
 }
 }
 
@@ -501,6 +528,7 @@ footer{
 }
 /* --------------------------tax-liability end------------------ */
 .remote-finance-main{
+    margin-top: 200px;
     padding: 0 20px;
 }
 .remote-finance{
@@ -520,14 +548,17 @@ footer{
  
  }
  .remote-finance-title h1{
+    margin-top: 20px;
  width: 90%;
  height: 250px;
+ font-size: 30px;
 }
 
 .remote-item-contain{
     gap: 18px;
     margin-bottom: 80px;
 }
+
 .item li, .items li{
     font-size: 12px;
 }
@@ -570,7 +601,7 @@ footer{
   }
 /* --------------------meet end --------------------------------------- */
 .Testimonial-main{
-height: 1000px;
+height: 1100px;
 padding: 0 24px;
 }
 .testimonial-contain{
@@ -578,24 +609,35 @@ padding: 0 24px;
     margin: 0 auto; 
 }
 .slider-container{
-    width: 100%;
-}
-.slider-card{
-    height: 400px;
     width: 600px;
 }
-.cercle-img article{
-    display: none;
+.slider-card{
+    height: 550px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    background-size: cover;
 }
+.cercle-img article {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-left: 20px;
+    text-align: center;
+    width: 80%;
+}
+.arro-btn2{
+    display: none;
+ }
+
 .arro-btn{
     height: 500px;
-    width: 100%;
+   
 }
 .slider-container{
     margin-top: -450px ;
 }
-.img-bg{
-    margin-left: 10px;
+.img-bg {
+    margin-left: -110px;
 }
 .img-card{
     margin: -260px 0px 0px 200px;
@@ -605,11 +647,7 @@ padding: 0 24px;
     width: 600px;
 }
 
-.cercle-img article{
-    margin-top: 50px;
-    margin-left: 0px;
-    width: 80%;
-}
+
 /* --------------------Testimonial end --------------------------------------- */
 .book-main{
     height: 950px;
@@ -652,28 +690,13 @@ padding: 0 24px;
     gap: 200px;
 }
 }
-@media (max-width: 1024px) {
-    .wrapper {
-        max-width: 1024px;
-        width: 100%;
-        position: relative;
-      }
-      .main_meet{
-        width: 964px;
-        margin: 0 auto;
-        margin-left: 36px;
-    }
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
+
 @media screen and (max-width: 900px) {
+    
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
-
-
 
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
@@ -709,6 +732,9 @@ padding: 0 24px;
     .book {
         width: 100%;
     }
+    .arro-btn2{
+        display: none;
+     }
     .book-title{
         width: 333px;
     }
@@ -737,9 +763,35 @@ padding: 0 24px;
     .remote-finance-title img {
         margin-top: -246px;
     }
+    .wrapper {
+        max-width: 1024px;
+        width: 100%;
+        position: relative;
+      }
+      .main_meet{
+        width: 964px;
+        margin: 0 auto;
+        margin-left: 36px;
+    }
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+    .abouteUs-main{
+        width: 100%;
+        overflow: hidden;
+        height: 985px;
+        background:#234147;
+    }
+    .wrapper .carousel {
+        gap: 100px;
+    }
+    .aboute-title{
+        width: 90%;
+        height: 250px;
+    }
 
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .remote-finance-main .remote-img {
         margin-top: -149px;
         height: 550px;
@@ -750,13 +802,15 @@ padding: 0 24px;
         overflow: hidden;
         height: 985px;
         background:#234147;
-    }   
+    }  
+    .arro-btn2{
+        display: none;
+     } 
     .wrapper .carousel {
         gap: 150px;
     }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {
-
     .abouteUs-main{
         width: 1902px;
         margin: 0 auto;
