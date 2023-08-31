@@ -53,7 +53,7 @@
     text-decoration: none;
 }
 .nav a:hover {
-    color: #fff;
+    color: #B8CA28;
 }
 .btn {
     width: 222px;
@@ -68,9 +68,8 @@
     text-decoration: none;
 }
 .btn:hover{
-    transition:  0.3s;
-    background: #B8CA28;
-    color: #284c54;
+    transition:  0.1s;
+    border: 1px solid #B8CA28;
 }
 .toggle {
     display: none;
@@ -85,6 +84,7 @@
 }
 .banner-details{
     width: 572px;
+    padding: 10px;
     margin-top: 120px;
 }
 .banner-details h1{
@@ -105,6 +105,9 @@
     margin-top: 24px;
     letter-spacing: 0.8px;
 }
+.banner-details p span{
+    color: #fff;
+}
 .banner-details button{
     width: 515px;
     height: 80px;
@@ -119,14 +122,20 @@
     align-items: center;
 }
 .banner-btn samp{
-    color: #234147;
+    color: #234147b5;
     font-family: 'Azeret Mono';
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.16px;
 } 
+
 .banner-btn img{
-   margin-left: 20px;
+    width: 39px;
+    height: 25px;
+    margin-left: 20px;
+}
+.banner-btn:hover img{
+    margin-left: 30px;
 }
 .banner-img{
     background-image: url('/img/logo/logo.png');
@@ -141,6 +150,7 @@
     margin-top: 20px;
     flex-shrink: 0;
 }
+
 /* -----------------------banner end ----------------------------------------- */
 .accounting{
    width: 100%;
@@ -194,16 +204,42 @@
     height: 538px;
     padding: 60px;
 }
+.card:hover{
+    background: #0C57AC;
+    color: #fff;
+}
+.card:hover h1 {
+    color: #fff;
+}
+.card:hover p{
+    color: #dde0e0;
+}
 .card-img1{
     background-image: url('/img/logo/stucture.png');
     width: 195px;
-    height: 175px;
+    height: 178px;
 }
+
+.card:hover .card-img1{
+    background-image: url('/img/logo/stucture2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 195px;
+    height: 182px;
+}
+
 .card-img2{
     background-image: url('/img/logo/texPlanning.png');
     background-repeat: no-repeat;
     width: 195px;
     height: 175px;
+}
+.card:hover .card-img2{
+    background-image: url('/img/logo/texPlanning2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 195px;
+    height: 182px;
 }
 .card-img3{
     background-image: url('/img/logo/cfo.png');
@@ -211,10 +247,24 @@
     width: 195px;
     height: 175px;
 }
+.card:hover .card-img3{
+    background-image: url('/img/logo/cfo2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 195px;
+    height: 182px;
+}
 .card-img4{
     background-image: url('/img/logo/services.png');
     width: 215px;
     height: 175px;
+}
+.card:hover .card-img4{
+    background-image: url('/img/logo/services2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 210px;
+    height: 190px;
 }
 .card h1{
     color: #234147;
@@ -233,6 +283,7 @@
     line-height: 20px; 
 }
 .liability-btn{
+    margin-top: 50px;
     width: 100%;
     height: 80px;
     border: none;
@@ -246,7 +297,6 @@
     height: 100%;
     padding: 50px 0px;
     position: relative;
-    z-index: -1;
 }
 .remote-finance-main .remote-img{
     position: absolute;
@@ -334,23 +384,34 @@
     font-weight: 300;
     line-height: 47px;
     letter-spacing: 0.36px;
-    text-decoration-line: strikethrough;
     text-transform: uppercase;
 }
 .items li{
+    margin-left: 20px;
+}
+.items li a{
+    text-decoration: none;
     color: #234147;
     font-family: 'Azeret Mono';
     font-size: 18px;
     font-weight: 300;
     line-height: 49px;
     letter-spacing: 0.36px;
-    margin-left: 20px;
     border-bottom: 1px solid #95A19A;
     text-transform: uppercase;
 }
+.items li:hover a{
+    margin-left: 5px;
+}
+.items li:hover::marker{
+    color: #FF6521;
+}
+
+
 .items li:last-child{
     border-bottom: none;
 }
+
 /* -----------------------------------------------------------remote-finance end --------------------------------------- */
 .main_meet{
     width: 964px;
@@ -376,11 +437,11 @@
     height: 363px;
     background:#F2F4F4;
   }
+  
   .grid_container .grid_item .grid_item_img img{
     position: absolute;
     width: 161px;
     height: 161px;
-    border-radius: 50%;
     margin-left: 35px;
     margin-top: -76px;
   }
@@ -475,15 +536,15 @@
 .slider {
     display: flex;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.10s ease-in-out;
 }
 .slide {
     flex: 0 0 100%;
     position: relative;
-    animation: myfirst 0.3s 1;
+    animation: myfirst 0.10s 1;
 }
 @keyframes myfirst {
-    0%  { left: 0px; top: 200px;}
+    0%  { left: 100px; top: 0px;}
     100% { left: 0px; top: 0px;}
   }
 .circles {
@@ -741,6 +802,7 @@
       align-items: center;
       gap: 16px;
   }
+
   .item-box-name{
       display: flex;
       justify-content: center;
@@ -758,6 +820,7 @@
       line-height: 25px;
       letter-spacing: -0.18px;
   }
+
   .carousel .card .img {
     background: #8B53FF;
     height: 148px;

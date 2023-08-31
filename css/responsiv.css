@@ -1,4 +1,5 @@
-@media (max-width: 768px) {
+
+@media (max-width: 1023px) {
     body{
         width: 100%;
     }
@@ -86,6 +87,10 @@
     .toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px); 
     }
+    /*=============*/
+    .tax-title h1{
+        width: 100%;
+    }
 }
  /* ------------------------------------header end ------------------------------------------ */
 @media (min-width: 280px) and (max-width: 576px) {
@@ -143,12 +148,13 @@
     width: 200px;
  }
  .tax-liability{
+    padding: 0 10px;
     width: 320px;
     margin: 0 auto;
     height: 100%;
 }
 .tax-title h1{
-    width: 300px;
+    width: 300;
     margin: 0 auto;
     font-size: 36px;
     line-height: 48px;
@@ -156,6 +162,7 @@
     letter-spacing: -0.36px;
 }
  .tax-heading{
+    margin-left: 10px;
     gap: 10px;
  }
 .tax-line{
@@ -247,6 +254,7 @@
 
 }
 .remote-item-contain{
+    padding: 0 10px;
     display: block;
     margin-bottom: 50;
 }
@@ -256,14 +264,14 @@
 .item-right-text{
     padding-left: 10px;
 }
-.items li{
-    padding-left: 5px;
+.items li a{
     font-size: 14px;
 }
 /* --------------------remote-finance end --------------------------------------- */
  .main_meet h1{
+    padding-left: 20px;
     width: 320px;
-    font-style: 34px;
+    font-size: 40px;
 }
 .main_meet{
     width: 320px !important; 
@@ -405,7 +413,8 @@
 /* ------------------------------end----------------------------- */
 .abouteUs-main{
     width: 100%;
-    height: 550px;
+    padding-top: 100px !important;
+    height: 650px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -414,8 +423,8 @@
     width: 100%;
     height: 60px;
     margin-top: 450px;
-    display: block;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center; 
 }
 .aboute-btn{
     display: none;
@@ -427,6 +436,7 @@
     position: relative;
     left: 0%;
 }
+
 .fooder-contain img{
     width: 90%;
 }
@@ -446,6 +456,7 @@ footer{
     height: 354px !important;  
 }
 .carousel .card{
+    margin-top: 50px;
     width: 300px !important;
     height: 334px !important;  
     padding: 0 0px;
@@ -460,9 +471,8 @@ padding: 1px;
     gap: 300px;
 }
 }
-
-@media (min-width: 578px) and (max-width: 768px) {
-    .header-main{
+@media (min-width: 577px) and (max-width: 1002px) {
+ .header-main{
         height: 90%;    
   }   
  .banner{
@@ -476,7 +486,6 @@ padding: 1px;
  }
  .banner-details h1{
      font-size: 30px;
-     line-height: 40px;
  }
  .banner-details p{
      font-size: 16px;
@@ -499,154 +508,263 @@ padding: 1px;
     margin: 0 auto;
      width: 485px;
      display: flex;
-    justify-content: center;
+     justify-content: center;
  }
  .banner-img img{
      width: 80%;
      height: 349px;
  }
 /* ---------------------------------banner end----------------------------------- */
-.tax-liability{
+.accounting{
+    height: 153px;
+ }
+ .accounting img{
+    width: 200px;
+ }
+ .tax-liability{
+    padding: 0 20px;
     width: 100%;
-    margin: 0 auto;
     height: 100%;
 }
-.tax-line{
-    width: 504px;
+.tax-title h1{
+    width: 300;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 0px;
+    letter-spacing: -0.36px;
 }
-.tax-title{
-    width: 100%;
-    padding: 0px 50px;
+ .tax-heading{
+    gap: 10px;
+ }
+.tax-line{
+    width: 300px;
+}
+.card-row{
+   display: block;
 }
 .card{
-    width: 380px;
-    height: 538px;
-    padding: 60px;
+    background: #0C57AC;
+    width: 300px;
+    height: 413px;
+    padding: 30px;
+    margin: 50px auto;
+}
+.card-img1{
+    background-image: url('/img/logo/stucture2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+}
+.card-img2{
+    background-image: url('/img/logo/texPlanning2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+}
+.card-img3{
+    background-image: url('/img/logo/cfo2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+}
+.card-img4{
+    background-image: url('/img/logo/services2.png');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
 }
 .card h1{
-    font-size: 28px;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 15px;
+    line-height: 36px; 
+}
+.card p{
+    margin-top: 10px;
+    color:  #F2F4F4;
+    font-size: 14px;
+    line-height: 20px; 
 }
 /* --------------------------tax-liability end------------------ */
 .remote-finance-main{
-    margin-top: 200px;
-    padding: 0 20px;
+    padding: 100px 0px;
+    margin-top: 150px;
+}
+.remote-finance-main .remote-img{
+    width: 230px;
+    height: 181px;
+    margin-top: -180px;
 }
 .remote-finance{
     width: 100%;
 }
+.remote-text-line{
+    width: 100%;
+    gap: 5px;
+}
+.remote-text-line p{
+    font-size: 12px;
+}
+.remote-line{
+    width: 160px;
+}
 .remote-finance-title{
     width: 100%;
+    display: block;
 }
-.remote-finance-main .remote-img{
-    width: 350px;
-    height: 281px;
-    margin-top: -180px;
+.remote-finance-title h1{
+    width: 90%;
+    height: 230px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 48px; 
+    letter-spacing: -0.36px;
 }
-
 .remote-finance-title img{
-    display: none;
- 
- }
- .remote-finance-title h1{
-    margin-top: 20px;
- width: 90%;
- height: 250px;
- font-size: 30px;
+   display: none;
 }
-
 .remote-item-contain{
-    gap: 18px;
-    margin-bottom: 80px;
+    padding-left: 30px;
+    display: block;
+    margin-bottom: 50;
 }
-
-.item li, .items li{
-    font-size: 12px;
+.item li{
+    font-size: 16px;
+}
+.item-right-text{
+    padding-left: 10px;
+}
+.items li{
+    padding-left: 5px;
+    font-size: 14px;
 }
 /* --------------------remote-finance end---------------------------------------- */
 .main_meet h1{
-    width: 620px;
+    width: 100%;
     font-style: 34px;
 }
 .main_meet{
-    width: 95% !important; 
+    padding: 0 10px;
+    width: 100% !important; 
+    margin:  0 auto !important;
 }
 .tax-heading{
-    width: 600px;
-}
-.tax-line{
-    width: 450px;
-}
-.liability-btn{
-    margin: 50px auto;
+    justify-content: start;
+    width: 300px;
 }
 .grid_container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid_item{
+    margin: 0 auto;
   }
   .grid_item2{
-    margin-top: 160px !important;
+    margin-top: 120px !important;
   }
   .grid_item3{
-    margin-top: 160px !important;
+    margin-top: 120px !important;
   }
   .grid_item4{
-    margin-top: 160px !important;
+    margin-top:120px !important;
   }
   .grid_item5{
-    margin-top: 160px !important;
+    margin-top:120px !important;
   }
   .grid_item6{
-    margin-top: 160px !important;
+    margin-top: 120px !important;
   }
+
 /* --------------------meet end --------------------------------------- */
+
 .Testimonial-main{
-height: 1100px;
-padding: 0 24px;
+    height: 963px;
 }
 .testimonial-contain{
     width: 100%;
-    margin: 0 auto; 
 }
-.slider-container{
-    width: 600px;
-}
-.slider-card{
-    height: 550px;
-    width: 600px;
-    margin: 0 auto;
-    padding: 0;
-    background-size: cover;
-}
-.cercle-img article {
-    margin-top: 20px;
-    font-size: 14px;
-    margin-left: 20px;
-    text-align: center;
-    width: 80%;
-}
-.arro-btn2{
-    display: none;
- }
-
-.arro-btn{
-    height: 500px;
-   
-}
-.slider-container{
-    margin-top: -450px ;
-}
-.img-bg {
-    margin-left: -110px;
-}
-.img-card{
-    margin: -260px 0px 0px 200px;
-  
+.tax-heading {
+    padding-left: 10px;
+    width: 100%;
 }
 .testimonial-contain h1{
-    width: 600px;
+    padding: 0 10px;
+    font-size: 36px;
+    line-height: 48px; 
 }
-
+.slide{
+    height:480px;
+    margin-left: 0;
+}
+.slider-card{
+    width: 100%;
+    margin-left: 0;
+    background-size: cover;
+    background-position: bottom;
+}
+.arro-btn{
+   display: none;
+}
+.arro-btn2{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    z-index: 1;
+    padding: 0 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.arro-btn2 button{
+    background: transparent;
+    border: none;
+}
+.arro-btn2 button img{
+    width: 20px;
+    height: 30px;
+}
+.slider-container {
+    position: relative;
+    width:100%;
+    height: 480px;
+    margin-top: 50px;
+}
+.cercle-img{
+    margin: 0 auto;
+    width: 290px;
+    height: 290px;
+}
+.img-bg{
+    margin-left:0px !important;
+}
+.img-bg img{
+    width: 220px;
+    height: 220px;
+}
+.img-card img{
+    width: 100px;
+    height: 100px;
+}
+.img-card{
+    margin: -170px 0px 0px 70px;
+    position: absolute;
+}
+.img-card h2{
+    font-size: 24px;
+}
+.cercle-img article{
+    margin-top: 50px;
+    margin-left: 5px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 20px;
+   
+}
+.circles{
+    margin-top: 40px;
+}
 
 /* --------------------Testimonial end --------------------------------------- */
 .book-main{
@@ -680,42 +798,23 @@ padding: 0 24px;
     overflow: hidden;
 }
 .aboute-title{
-    width: 100%;
+    width: 90%;
     justify-content: space-around;
 }
 .arror_btn{
     margin-top: 50px;
 }
 .wrapper .carousel {
-    gap: 200px;
+    gap: 300px;
+    margin-left: -100px;
 }
+.fooder-line{
+    display: none;
 }
-
-@media screen and (max-width: 900px) {
-    
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
+.fooder-contain img{
+    width: 300px;
+    margin: 50px auto;
 }
-
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-    .wrapper {
-        padding: 0 16px;
-        width: 100%;
-        position: relative;
-      }
-      .carousel .card{
-        width: 100%;
-      }
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
 }
 
  @media(min-width: 769px) and (max-width: 1024px) {
@@ -727,7 +826,7 @@ padding: 0 24px;
         padding-left: 30px;
     }
     .banner-img img{
-        width: 400px;
+        width: 385px;
     }
     .book {
         width: 100%;
@@ -789,7 +888,6 @@ padding: 0 24px;
         width: 90%;
         height: 250px;
     }
-
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -808,12 +906,12 @@ padding: 0 24px;
         display: none;
      } 
     .wrapper .carousel {
-        gap: 150px;
+        gap: 200px;
     }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {
     .abouteUs-main{
-        width: 1902px;
+        width: 100%;
         margin: 0 auto;
         overflow: hidden;
         height: 985px;
