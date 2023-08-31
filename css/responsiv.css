@@ -178,6 +178,9 @@
     padding: 30px;
     margin: 50px auto;
 }
+.card:hover{
+    height: 100%;
+}
 .card-img1{
     background-image: url('/img/logo/stucture2.png');
     background-repeat: no-repeat;
